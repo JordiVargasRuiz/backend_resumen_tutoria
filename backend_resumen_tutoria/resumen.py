@@ -15,6 +15,7 @@ MAX_PALABRAS = 24000
 MIN_PALABRAS = 20
 UMBRAL_RESUMEN = 400
 
+@app.route("/", methods=["GET"])
 def home():
     return jsonify({"message": "Backend activo"}), 200
 
